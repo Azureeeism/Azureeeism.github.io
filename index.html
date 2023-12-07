@@ -2,14 +2,17 @@
 <html lang="en">
 <head>
     <title>UNP CCIT</title>
-    <link rel="icon" href="./CCIT.png">
+    <link rel="icon" href="./unp-logo.png">
 </head>
 <body>
-
     <div id="navigation-bar">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./CCIT.png" alt="CCIT-logo" style="width: 70px; margin-left: 24px; margin-right: 10px;"></a>
-            <h2>College of Communication and Information Technology</h2>
             
+            <a id="CCIT-logo" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./CCIT.png" alt="CCIT-logo" style="width: 70px; margin-left: 24px; margin-right: 10px;"></a>
+            <h2>College of Communication and Information Technology</h2>
+            <div id="socials-container">
+                <img src="./fb-icon.svg" alt="">
+                <a  style="text-decoration: none;" href="https://www.facebook.com/unpccit"><h3 style="position: relative; top: 10px;">unpccit</h3></a>
+            </div>
     </div>
     
     <div id="CCIT-container" style="margin: 24px;">
@@ -47,16 +50,29 @@
     #navigation-bar {
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
         display: flex;
-        align-items: center;
         background-color: steelblue;
         overflow: hidden;
         color: white;
         padding: 4px;
     }
-    #navigation-bar img{
-        transition: opacity 0.2s ease-in-out
+    #socials-container{
+        transition: opacity 0.3s ease-in-out;
+        display: flex;
+        margin-left: auto;
+        margin-right: 10px;
     }
-    #navigation-bar img:hover{
+    #socials-container a:visited{
+        color: white;
+    }
+    #socials-container:hover{
+        cursor: pointer;
+        opacity: 77%;
+    }
+    #CCIT-logo{
+        transition: opacity 0.4s ease-in-out
+    }
+
+    #CCIT-logo:hover{
         opacity: 70%;
     }
 
@@ -89,3 +105,4 @@
 </style>
 
 </html>
+
