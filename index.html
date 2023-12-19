@@ -1,134 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UNP | CCIT</title>
     <link rel="icon" href="./unp-logo.png">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: white
+        }
+
+        #navigation-bar {
+            border-bottom: 1px solid rgba(50, 50, 93, 0.25);
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            display: flex;
+            background-color: steelblue;
+            overflow: hidden;
+            color: white;
+            padding: 4px;
+        }
+
+        #fb-container {
+            transition: opacity 0.3s ease-in-out;
+            display: flex;
+            margin-left: auto;
+            margin-right: 10px;
+        }
+
+        #fb-container a {
+            position: relative;
+            top: 8%;
+        }
+
+        #fb-container a:visited {
+            color: white;
+        }
+
+        #fb-container:hover {
+            cursor: pointer;
+            opacity: 77%;
+        }
+
+        #CCIT-logo {
+            transition: opacity 0.4s ease-in-out
+        }
+
+        #CCIT-logo:hover {
+            opacity: 70%;
+        }
+
+        #courses-container {
+            font-size: larger;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding: 30px;
+            border: 1px inset #f4f4f4;
+            border-radius: 4px;
+        }
+
+        #course-list {
+            list-style: none;
+            border-top: 4px solid;
+            border-color: green;
+        }
+
+        #course-list li {
+            margin-left: 24px;
+        }
+
+        .course-name:hover {
+
+            opacity: 80%;
+            cursor: default;
+        }
+
+        .course-name {
+            border-radius: 10px;
+            padding: 10px;
+            transition: opacity 0.1s ease-in-out;
+            background-color: steelblue;
+            color: white;
+            padding: 10px;
+        }
+
+        .job-container {
+            border-left: steelblue 10px solid;
+            border-top: green solid 7px;
+            padding: 10px;
+            border-radius: 0px 10px;
+            background-color: ghostwhite;
+        }
+
+        .course-desc {
+            font-size: 22px;
+            font-style: italic;
+            border-radius: 10px 0px;
+            padding: 14px;
+            border-left: green solid 10px;
+            background-color: ghostwhite;
+            margin: 0;
+        }
+
+        .job-list {
+            margin-bottom: 24px;
+            list-style: disc;
+        }
+
+        .job-list:last-child {
+            margin-bottom: 14px;
+        }
+    </style>
 </head>
+
 <body>
     <div id="navigation-bar">
-            
-            <a id="CCIT-logo" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./CCIT.png" alt="CCIT-logo" style="width: 70px; margin-left: 24px; margin-right: 10px;"></a>
-            <h1>College of Communication and Information Technology</h1>
-            <div id="fb-container">
-                <img src="./fb-icon.svg" alt="">
-                <a  style="text-decoration: none;" href="https://www.facebook.com/unpccit"><h3 style="position: relative; top: 10px;">unpccit</h3></a>
-            </div>
+
+        <a id="CCIT-logo" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./CCIT.png" alt="CCIT-logo"
+                style="width: 70px; margin-left: 24px; margin-right: 10px;"></a>
+        <h1>College of Communication and Information Technology</h1>
+        <div id="fb-container">
+            <img src="./fb-icon.svg" alt="">
+            <a style="text-decoration: none;" href="https://www.facebook.com/unpccit">
+                <h3 style="position: relative; top: 10px;">unpccit</h3>
+            </a>
+        </div>
     </div>
-    
+
     <div style="margin: 24px;">
-        <div id="course-container">
+        <div id="courses-container">
             <h2 style="color: green;">Courses</h2>
-           <table>
-                <th>
-                    
-                </th>
-           </table>
-            <ul id="course-list"> 
+            <ul id="course-list">
                 <li>
-                    <h3 title="BSIT">Bachelor Science in Information Technology</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel est id diam egestas efficitur. 
-                        Aenean vestibulum quis ipsum vel aliquet. Phasellus ac nisi eleifend, porta erat eu, molestie purus. 
-                        Etiam pharetra sit amet justo vel tincidunt. In vel hendrerit nisl. Proin suscipit egestas lacus, et 
-                        gravida purus vestibulum quis. Mauris a volutpat augue. Integer accumsan at arcu sit amet condimentum. 
-                        Ut velit libero, rhoncus sed orci in, hendrerit finibus est. Morbi euismod ultricies dui, mattis cursus 
-                        tortor maximus vel. Vestibulum a accumsan leo.</p>
+
+                    <h2 class="course-name" title="BSIT">Bachelor Science in Information Technology</h2>
+                    <p class="course-desc">
+                        The Bachelor of Science and Information Technology program includes the study of the utilization
+                        of both hardware and software technologies involving planning, installing, customizing,
+                        operating,
+                        managing, and administering and maintaining information technology infrastracture that provides
+                        computing
+                        solutionms to address the needs of an organization. <br>
+
+                        The program prepares graduates to address various user needs involving the selection,
+                        development, application,
+                        integration and management of computing technologies within an organization
+                    </p>
+                    <div class="job-container">
+                        <ul class="job-list" class="job-container">
+                            <h3>Job Oppurtunities</h3>
+                            <b>Primary Job Roles:</b>
+
+                            <li>Web and Applications Developer</li>
+                            <li>Junior Database Administrator</li>
+                            <li>Systems Administrator</li>
+                            <li>Network Engineer</li>
+                            <li>Junior Information Security Administrator</li>
+                            <li>Systems Integration Personnel</li>
+                            <li>IT Audiot Assistant</li>
+                            <li>Technical Support Specialist</li>
+
+                            <b>Secondary Job Roles:</b>
+                            <li>QA Specialist</li>
+                            <li>Systems Analyst</li>
+                            <li>Computer Programmer</li>
+                        </ul>
+                    </div>
+
                 </li>
                 <li>
-                    <h3 title="BSCS">Bachelor Science in Computer Science</h3>
-                    <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel est id diam egestas efficitur. 
-                        Aenean vestibulum quis ipsum vel aliquet. Phasellus ac nisi eleifend, porta erat eu, molestie purus. 
-                        Etiam pharetra sit amet justo vel tincidunt. In vel hendrerit nisl. Proin suscipit egestas lacus, et 
-                        gravida purus vestibulum quis. Mauris a volutpat augue. Integer accumsan at arcu sit amet condimentum. 
-                        Ut velit libero, rhoncus sed orci in, hendrerit finibus est. Morbi euismod ultricies dui, mattis cursus 
-                        tortor maximus vel. Vestibulum a accumsan leo.</p>
-                </li>
-                <li >
-                    <h3 title="BLIS">Bachelor Science in Library and Information Science</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel est id diam egestas efficitur. 
-                        Aenean vestibulum quis ipsum vel aliquet. Phasellus ac nisi eleifend, porta erat eu, molestie purus. 
-                        Etiam pharetra sit amet justo vel tincidunt. In vel hendrerit nisl. Proin suscipit egestas lacus, et 
-                        gravida purus vestibulum quis. Mauris a volutpat augue. Integer accumsan at arcu sit amet condimentum. 
-                        Ut velit libero, rhoncus sed orci in, hendrerit finibus est. Morbi euismod ultricies dui, mattis cursus 
-                        tortor maximus vel. Vestibulum a accumsan leo.</p>
+                    <h2 class="course-name" title="BLIS">Bachelor Science in Library and Information Science</h2>
+                    <p class="course-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel est id diam egestas
+                        efficitur.
+                        Aenean vestibulum quis ipsum vel aliquet. Phasellus ac nisi eleifend, porta erat eu, molestie
+                        purus.
+                        Etiam pharetra sit amet justo vel tincidunt. In vel hendrerit nisl. Proin suscipit egestas
+                        lacus, et
+                        gravida purus vestibulum quis. Mauris a volutpat augue. Integer accumsan at arcu sit amet
+                        condimentum.
+                        Ut velit libero, rhoncus sed orci in, hendrerit finibus est. Morbi euismod ultricies dui, mattis
+                        cursus
+                        tortor maximus vel. Vestibulum a accumsan leo.
+                    </p>
+
                 </li>
                 <li>
-                    <h3 title="DCT">Diploma in Computer Technology</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel est id diam egestas efficitur. 
-                        Aenean vestibulum quis ipsum vel aliquet. Phasellus ac nisi eleifend, porta erat eu, molestie purus. 
-                        Etiam pharetra sit amet justo vel tincidunt. In vel hendrerit nisl. Proin suscipit egestas lacus, et 
-                        gravida purus vestibulum quis. Mauris a volutpat augue. Integer accumsan at arcu sit amet condimentum. 
-                        Ut velit libero, rhoncus sed orci in, hendrerit finibus est. Morbi euismod ultricies dui, mattis cursus 
-                        tortor maximus vel. Vestibulum a accumsan leo.</p>
+                    <h2 class="course-name" title="BSCS">Bachelor Science in Computer Science</h2>
+
+                    <p class="course-desc">
+                        The Bachelor Science in Computer Science produces graduates with a broad understanding of the
+                        concepts and theories. computing
+                        principles and computing practices. It is intended for students who have a significant interest
+                        in the
+                        theory of computation and development of computer systems at the deepest level
+                    </p>
+                    <div class="job-container">
+                        <ul class="job-list" class="job-container">
+                            <h3>Job Oppurtunities</h3>
+                            <b>Primary Job Roles:</b>
+
+                            <li>Software Engineer</li>
+                            <li>Systems Software Developer</li>
+                            <li>Research and Development Computing Professional</li>
+                            <li>Applications Software Developer</li>
+                            <li>Computer Programmer</li>
+
+                            <b>Secondary Job Roles:</b>
+                            <li>Systems Analyst</li>
+                            <li>Data Analyst</li>
+                            <li>Quality Assurance Specialist</li>
+                            <li>Software Support Specialist</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <h2 class="course-name" title="DCT">Diploma in Computer Technology</h2>
+                    <p class="course-desc">
+                        The Diploma in Computer Technology (DCT) program is a comprehensive two year
+                        degree program designed to provide students with specialized skills in three
+                        distinct areas of the computing industry. The DCT program provides the approriate
+                        training on three (3) particular major: Networking, Application Development, and
+                        Multimedia. The Program allows students to choose a major based on their interests
+                        and career aspirations, enabling them to gain in depth knowledge and hands on experience
+                        in their chosen field
+                    </p>
+                    <div class="job-container">
+                        <ul class="job-list" class="job-container">
+                            <h3>DCT Job Oppurtunities</h3>
+
+                            <li>Network Technician</li>
+                            <li>Computer Technician</li>
+                            <li>Web Programmer</li>
+                            <li>Computer Programmer</li>
+                            <li>Database Administrator Assistant</li>
+                            <li>Network Security Assistant</li>
+                            <li>Administrative Assistant</li>
+                            <li>Office Assistant</li>
+                            <li>Data Encoder</li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
         </div>
+        <div id="faculties-container">
+        </div>
     </div>
-    
+
 </body>
-<style>
-    body{
-        font-family: sans-serif; 
-        margin: 0;
-        background-color: white
-    }
-    #navigation-bar {
-        border-bottom: 1px solid rgba(50, 50, 93, 0.25);
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-        display: flex;
-        background-color: steelblue;
-        overflow: hidden;
-        color: white;
-        padding: 4px;
-    }
-    #fb-container{
-        transition: opacity 0.3s ease-in-out;
-        display: flex;
-        margin-left: auto;
-        margin-right: 10px;
-    }
-    #fb-container a{
-        position: relative;
-        top: 8%;
-    }
-    #fb-container a:visited{
-        color: white;
-    }
-    #fb-container:hover{
-        cursor: pointer;
-        opacity: 77%;
-    }
-    #CCIT-logo{
-        transition: opacity 0.4s ease-in-out
-    }
-    #CCIT-logo:hover{
-        opacity: 70%;
-    }
-    #course-container {
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        padding: 30px;
-        border: 1px inset #f4f4f4;
-        background-color: #f8f8f8;
-        border-radius: 4px;
-    }
-    #course-list {
-        list-style: none;
-        border-top: 4px solid;
-        border-color: green;
-    }
-    #course-list li {
-        margin: 24px;
-    }
-    #course-list li h3{
-        transition: opacity 0.1s ease-in-out
-    }
-    #course-list li h3:hover {
-        opacity: 80%;
-        cursor: default;
-    }
-    #course-list li p{
-        margin-left: 34px;
-    }
-</style>
+
 
 </html>
-
