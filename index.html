@@ -3,220 +3,126 @@
 
 <head>
     <title>UNP | CCIT</title>
-    <link rel="icon" href="./unp-logo.png">
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 0;
-        }
-
-        #navigation-bar {
-            border-bottom: 1px solid rgba(50, 50, 93, 0.25);
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-            display: flex;
-            background-color: steelblue;
-            overflow: hidden;
-            color: white;
-            padding: 4px;
-        }
-
-        #fb-container {
-            transition: opacity 0.3s ease-in-out;
-            display: flex;
-            margin-left: auto;
-            margin-right: 10px;
-        }
-
-        #fb-container a {
-            position: relative;
-            top: 8%;
-        }
-
-        #fb-container a:visited {
-            color: white;
-        }
-
-        #fb-container:hover {
-            cursor: pointer;
-            opacity: 77%;
-        }
-
-        #ccit-hyperlink-logo {
-            transition: opacity 0.4s ease-in-out;
-
-        }
-        #ccit-logo{
-            width: 70px; 
-            margin-left: 24px; 
-            margin-right: 10px;
-        }
-
-        #ccit-hyperlink:hover {
-            opacity: 70%;
-        }
-
-        #courses-container {
-            padding: 30px;
-            border: 1px inset #f4f4f4;
-            border-radius: 4px;
-        }
-
-        #course-list {
-            list-style: none;
-            border-top: 4px solid;
-            border-color: green;
-        }
-
-        #course-list li {
-            margin-left: 24px;
-        }
-        .course-name {
-            padding: 10px;
-            transition: opacity 0.1s ease-in-out;
-            background-color: steelblue;
-            color: white;
-            padding: 10px;
-            margin-bottom: 0;
-        }
-
-        .course-desc {
-            box-shadow: 0px -20px 25px 20px rgba(0,0,0,0.1);
-            font-size: 18px;
-            padding: 24px;
-            background-color: ghostwhite;
-            margin: 0px;
-
-        }
-        .job-container {
-            padding: 10px;
-            margin-left: 0px;
-            box-shadow: 0px 23px 33px 23px rgba(0,0,0,0.1);
-        }
-
-        .job-list {
-            margin-bottom: 24px;
-            margin-left: 20px;
-            list-style: none;
-        }
-        .job-list li{
-            border-left: 2px solid green;
-            padding-left: 10px;
-            margin-bottom: 8px;
-        }
-        .job-listli:last-child {
-            margin-bottom: 14px;
-        }
-    </style>
+    <link rel="icon" href="./image_folder/unp-logo.png">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <div id="navigation-bar">
-
-        <a id="ccit-hyperlink" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img id="ccit-logo" src="./CCIT.png" alt="CCIT-logo"></a>
-        <h1>College of Communication and Information Technology</h1>
-        <div id="fb-container">
-            <img src="./fb-icon.svg" alt="">
-            <a style="text-decoration: none;" href="https://www.facebook.com/unpccit">
-                <h3 style="position: relative; top: 10px;">unpccit</h3>
+        <header>
+            <div id="header-content">
+             <a id="ccit-hyperlink" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" onclick="setRandomLink()"><img id="ccit-logo" src="./image_folder/CCIT.png"
+                alt="CCIT-logo">
             </a>
-        </div>
-    </div>
-    
-        <div id="courses-container">
-            <div>
-            <h2 style="color: green;">Courses</h2>
-            <ul id="course-list">
-                <li>
-                    <h2 class="course-name" title="BSIT">Bachelor Science in Information Technology</h2>
-                    <p class="course-desc">
-                        The Bachelor of Science and Information Technology program includes the study of the utilization
-                        of both hardware and software technologies involving planning, installing, customizing,
-                        operating,
-                        managing, and administering and maintaining information technology infrastracture that provides
-                        computing
-                        solutionms to address the needs of an organization. <br>
+            <h1>College of Communication and Information Technology</h1>
+            </div>
+            
+        </header>
+        <nav>
+            <a id="BSIT" href="#bsit" title="Bachelor Science Information Technology">BSIT</a>
+            <span>|</span>
+            <a id="BSCS" href="#bscs" title="Bachelor Science Computer Science">BSCS</a>
+            <span>|</span>
+            <a id="BLIS" href="#blis" title="Bachelor Science Library and Information Science">BLIS</a>
+            <span>|</span>
+            <a id="DCT" href="#dct" title="Diploma in Computer Technology">DCT</a>
+        </nav>
+    <div id="courses-container">
+        <h2>Programs Offered</h2>
 
-                        The program prepares graduates to address various user needs involving the selection,
-                        development, application,
-                        integration and management of computing technologies within an organization
-                    </p>
-                    <div class="job-container">
-                        <h3>BSIT Job Oppurtunities</h3>
-                        <h4 class="job-list">Primary Job Roles:</h4>
-                        <ul class="job-list" >
-                            <li>Web and Applications Developer</li>
-                            <li>Junior Database Administrator</li>
-                            <li>Systems Administrator</li>
-                            <li>Network Engineer</li>
-                            <li>Junior Information Security Administrator</li>
-                            <li>Systems Integration Personnel</li>
-                            <li>IT Audio Assistant</li>
-                            <li>Technical Support Specialist</li>
+        <div id="course-list">
+                <h3 id="bsit" class="course-name"  title="BSIT">Bachelor Science in Information Technology (BSIT)</h3>
+                <p class="course-description">
+                    The Bachelor of Science and Information Technology program includes the study of the utilization
+                    of both hardware and software technologies involving planning, installing, customizing,
+                    operating,
+                    managing, and administering and maintaining information technology infrastracture that provides
+                    computing
+                    solutionms to address the needs of an organization. <br>
 
-                        </ul>
-                        <h4 class="job-list">Secondary Job Roles:</h4>
-                        <ul class="job-list">
-                            
-                            <li>QA Specialist</li>
-                            <li>Systems Analyst</li>
-                            <li>Computer Programmer</li>
-                        </ul>
-                    </div>
+                    The program prepares graduates to address various user needs involving the selection,
+                    development, application,
+                    integration and management of computing technologies within an organization
+                </p>
+
+                <div class="jobs-container">
+                    <h3>BSIT Job Opportunities</h3>
                 
-                </li>
+                    <h4 class="job-list">Primary Job Roles:</h4>
+                    <ul id="bsit-job-list" class="job-list" style="column-count: 2; ;">
+                        <li>Web and Applications Developer</li>
+                        <li>Junior Database Administrator</li>
+                        <li>Systems Administrator</li>
+                        <li>Network Engineer</li>
+                        <li>Junior Information Security Administrator</li>
+                        <li>Systems Integration Personnel</li>
+                        <li>IT Audio Assistant</li>
+                        <li>Technical Support Specialist</li>
+                    </ul>
                 
-                <li>
-                    <h2 class="course-name" title="BSCS">Bachelor Science in Computer Science</h2>
+                    <h4 class="job-list">Secondary Job Roles:</h4>
+                    <ul class="job-list">
+                        <li>QA Specialist</li>
+                        <li>Systems Analyst</li>
+                        <li>Computer Programmer</li>
+                    </ul>
+                </div>
+                
 
-                    <p class="course-desc">
-                        The Bachelor Science in Computer Science produces graduates with a broad understanding of the
-                        concepts and theories. computing
-                        principles and computing practices. It is intended for students who have a significant interest
-                        in the
-                        theory of computation and development of computer systems at the deepest level
-                    </p>
-                    <div class="job-container">
-                        <h3>BSCS Job Oppurtunities</h3>
-                        <h4 class="job-list">Primary Job Roles:</h4>
-                        <ul class="job-list" >
-                            <li>Software Engineer</li>
-                            <li>Systems Software Developer</li>
-                            <li>Research and Development Computing Professional</li>
-                            <li>Applications Software Developer</li>
-                            <li>Computer Programmer</li>
-                        </ul>
-                        <span>
-                        <h4 class="job-list">Secondary Job Roles:</h4>
-                        <ul class="job-list">
-                            <li>Systems Analyst</li>
-                            <li>Data Analyst</li>
-                            <li>Quality Assurance Specialist</li>
-                            <li>Software Support Specialist</li>
-                        </span>
-                        </ul>
-                            
-                    </div>
-                </li>
+                <!--Roiden Olipani-->
+                <h3 id="bscs" class="course-name" title="BSCS">Bachelor Science in Computer Science (BSCS)</h3>
 
-                <li>
-                    <h2 class="course-name" title="BLIS">Bachelor Science in Library and Information Science</h2>
-                    <p class="course-desc">
-                        This Program is the study of the development. deployment, and management of information resources in print,
-                        non-print, electronic and digital formats and services. Graduates of this program are being prepared
-                        to apply information technology to basic library operations and functions Moreover,
-                        they are trained to harness a range of bibliographical and online tools to support teaching, research, and other
-                        services. Graduates of this program are likewise expected to systematically organize, conserve,
-                        preserve, and restore information objects (e.g. realia museum pieces), historical and cultural documents (e.g. 
-                        artifacts, archival documents, indigenous knowledge) and other intellectual properties (creative ideas and works by individuals
-                        and groups). The program was based on the Guidelines for Professional Library / Information Education Programs of the International
-                        Federation of the Library Associations and Institutions (IFLA) as well as on the curricula of the various library schools abroad 
-                    </p>
-                    <div class="job-container " >
+                <p class="course-description">
+                    The Bachelor Science in Computer Science produces graduates with a broad understanding of the
+                    concepts and theories. computing
+                    principles and computing practices. It is intended for students who have a significant interest
+                    in the
+                    theory of computation and development of computer systems at the deepest level
+                </p>
+                <div class="jobs-container">
+                    <h3>BSCS Job Opportunities</h3>
+                    <h4 class="job-list">Primary Job Roles:</h4>
+                    <!--Create an unordered list with a class of "job-list" containing Primary Job Roles-->
+                    <ul class="job-list" >
+                        <li>Software Engineer</li>
+                        <li>Systems Software Developer</li>
+                        <li>Research and Development Computing Professional</li>
+                        <li>Applications Software Developer</li>
+                        <li>Computer Programmer</li>
+                    </ul>
 
+                    <h4 class="job-list">Secondary Job Roles:</h4>
+                    <ul class="job-list">
+                        <li>Systems Analyst</li>
+                        <li>Data Analyst</li>
+                        <li>Quality Assurance Specialist</li>
+                        <li>Software Support Specialist</li>
+                    </ul>
+                    <!--Create an unordered list with a class of "job-list" containing Secondary Job Roles-->
                     
-                    <h3>BLIS Job Oppurtunities</h3>
-                    <ul class="job-list" style="display: flex;">
-                        <span style="float: left;">
+
+                </div>
+
+                <h3 id="blis" class="course-name" title="BLIS">Bachelor Science in Library and Information Science (BLIS)</h3>
+                <p class="course-description">
+                    The Bachelor Science in Library and Information Science is the study of the development. deployment,
+                    and management of information resources in print,
+                    non-print, electronic and digital formats and services. Graduates of this program are being prepared
+                    to apply information technology to basic library operations and functions Moreover,
+                    they are trained to harness a range of bibliographical and online tools to support teaching,
+                    research, and other
+                    services. Graduates of this program are likewise expected to systematically organize, conserve,
+                    preserve, and restore information objects (e.g. realia museum pieces), historical and cultural
+                    documents (e.g.
+                    artifacts, archival documents, indigenous knowledge) and other intellectual properties (creative
+                    ideas and works by individuals
+                    and groups). The program was based on the Guidelines for Professional Library / Information
+                    Education Programs of the International
+                    Federation of the Library Associations and Institutions (IFLA) as well as on the curricula of the
+                    various library schools abroad
+                </p>
+                <div class="jobs-container ">
+                    <h3 >BLIS Job Opportunities</h3>
+                    <ul class="job-list" style="column-count: 4;">
                             <li>Bibliographer</li>
                             <li>Copy Cataloger</li>
                             <li>Documentation Officer</li>
@@ -226,22 +132,19 @@
                             <li>Records Assistant</li>
                             <li>Abstractor</li>
                             <li>Academic Librarian</li>
-                        </span>
 
-                        <span style="margin-left: 100px;">
                             <li>Acquisitions Librarian</li>
                             <li>Archivist</li>
                             <li>Cataloger</li>
                             <li>Conservator</li>
                             <li>Corporate Librarian</li>
                             <li>Indexer</li>
-                            
+
                             <li>Law Librarian</li>
                             <li>LIS Faculty</li>
                             <li>Map Librariann</li>
-                        </span>
 
-                        <span style="margin-left: 100px;">
+
                             <li>Medical Librarian</li>
                             <li>Preservation Librarian</li>
                             <li>Public Librarian</li>
@@ -251,53 +154,61 @@
                             <li>Special Library Professional</li>
                             <li>Systems Librarian</li>
                             <li>Teacher Librarian</li>
-                        </span>
 
-                        <span style="margin-left: 100px;">
                             <li>Multimedia / AV Librarian /Specialist</li>
                             <li>Information Librarian Specialist</li>
                             <li>Geographic Information Systems Librarian</li>
                             <li>Database Librarian</li>
-                        </span>
-                        </ul>
-                    </div>
-                </li>
 
-                <li>
-                    <h2 class="course-name" title="DCT">Diploma in Computer Technology</h2>
-                    <p class="course-desc">
-                        The Diploma in Computer Technology (DCT) program is a comprehensive two year
-                        degree program designed to provide students with specialized skills in three
-                        distinct areas of the computing industry. The DCT program provides the approriate
-                        training on three (3) particular major: Networking, Application Development, and
-                        Multimedia. The Program allows students to choose a major based on their interests
-                        and career aspirations, enabling them to gain in depth knowledge and hands on experience
-                        in their chosen field
-                    </p>
-                    <div class="job-container">
-                        <ul class="job-list" >
-                            <h3>DCT Job Oppurtunities</h3>
+                    </ul>
+                </div>
 
-                            <li>Network Technician</li>
-                            <li>Computer Technician</li>
-                            <li>Web Programmer</li>
-                            <li>Computer Programmer</li>
-                            <li>Database Administrator Assistant</li>
-                            <li>Network Security Assistant</li>
-                            <li>Administrative Assistant</li>
-                            <li>Office Assistant</li>
-                            <li>Data Encoder</li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
+
+                <h3 id="dct" class="course-name" title="DCT">Diploma in Computer Technology (DCT)</h3>
+                <!--Create Course Description using the p tag with a class of "course-desc"-->
+                <p class="course-description">
+                    The Diploma in Computer Technology (DCT) program is a comprehensive two year
+                    degree program designed to provide students with specialized skills in three
+                    distinct areas of the computing industry. The DCT program provides the approriate
+                    training on three (3) particular major: Networking, Application Development, and
+                    Multimedia. The Program allows students to choose a major based on their interests
+                    and career aspirations, enabling them to gain in depth knowledge and hands on experience
+                    in their chosen field
+                </p>
+
+                <div class="jobs-container">
+                    <h3>DCT Job Opportunities</h3>
+                    
+                    <!--Create an unordered list with a class of job-list containing DCT Job Opportunities-->
+                    <ul class="job-list" >
+                        <li>Network Technician</li>
+                        <li>Computer Technician</li>
+                        <li>Web Programmer</li>
+                        <li>Computer Programmer</li>
+                        <li>Database Administrator Assistant</li>
+                        <li>Network Security Assistant</li>
+                        <li>Administrative Assistant</li>
+                        <li>Office Assistant</li>
+                        <li>Data Encoder</li>
+                    </ul>
+
+
+                </div>
+
         </div>
-    </div>
 
+    </div>
+    <div id="facilites-and-room-container">
+
+        <h2>Facilites and Rooms</h2>
+
+    </div>
     <footer>
-        <p style="color: white; margin: 24px;">Do not click the CCIT logo.</p>
-      </footer>
+        <p>&copy; 2024 Hotdog sa ref. All rights reserved.</p>
+    </footer>
+
 </body>
+<script src="script.js"></script>
 </style>
 
 </html>
