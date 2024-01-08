@@ -6,23 +6,36 @@ html {
     scroll-behavior: smooth;
 }
 
-@media only screen and (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
 
-  #header-content {
-    flex-direction: column;
-    align-items: center;
-  }
+@media screen and (max-width: 768px) {
+    body{
+        width: 110%;
+    }
+    h1 {
+        font-size: 1.2em; /* Adjust the font size as needed */
+    }
 
-  nav {
-    margin-top: 20px;
-  }
+    h2 {
+        font-size: 1.1em; /* Adjust the font size as needed */
+    }
+    h3{
+        font-size: 0.9em;
+    }
+    h4{
+        font-size: 0.7em;
+    }
 
-  .jobs-container {
-    column-count: 1;
-  }
+    .course-name {
+        font-size: 1em; /* Adjust the font size as needed */
+    }
+
+    .course-description {
+        font-size: 0.8em; /* Adjust the font size as needed */
+    }
+
+    .job-list li {
+        font-size: 0.7em; /* Adjust the font size as needed */
+    }
 }
 
 body {
@@ -47,7 +60,7 @@ a{
 header {
     background-color: #2c3e50   ;
     color: #fff;
-    padding: 4px 0;
+
     text-align: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
@@ -93,7 +106,7 @@ nav a:hover{
 #courses-container {
 
     padding: 30px;
-    margin: 00px 20px 00px 20px;
+
 
 }
 
